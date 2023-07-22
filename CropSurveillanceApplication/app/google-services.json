@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "364249512421",
+    "project_id": "cropsurveillancesystem",
+    "storage_bucket": "cropsurveillancesystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364249512421:android:565bf30143e3fcc2f2970c",
+        "android_client_info": {
+          "package_name": "com.example.cropsurveillanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364249512421-55gocss7him80lid5poeorkru5t3o9p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2RkXYGpXKd-wdRDRhnv_I6I9t0XwPrdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364249512421-55gocss7him80lid5poeorkru5t3o9p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364249512421:android:eb204245616cd430f2970c",
+        "android_client_info": {
+          "package_name": "com.example.cropsurveillanceapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364249512421-55gocss7him80lid5poeorkru5t3o9p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2RkXYGpXKd-wdRDRhnv_I6I9t0XwPrdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364249512421-55gocss7him80lid5poeorkru5t3o9p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

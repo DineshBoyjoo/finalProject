@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/tv_settings_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logged in as: \n xyz@gmail.com"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+        android:id="@+id/btn_configure_ads"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Configure Animal Deterring System"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_changepwd" />
+
+    <Button
+        android:id="@+id/btn_changepwd"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_settings_email" />
+
+    <Button
+        android:id="@+id/btn_hidepwd"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Hide Password Menu"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_settings_email" />
+
+    <Button
+        android:id="@+id/btn_configure_crops"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Configure Crop details"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_configure_ads" />
+
+    <Button
+        android:id="@+id/btn_configure_plantparam"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Configure Plant parameters"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_configure_crops" />
+
+    <EditText
+        android:id="@+id/edt_confirmpwd"
+        android:layout_width="256dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="256dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <Button
+        android:id="@+id/btn_confirm_changepwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_confirmpwd"
+        app:layout_constraintVertical_bias="0.209" />
+</androidx.constraintlayout.widget.ConstraintLayout>

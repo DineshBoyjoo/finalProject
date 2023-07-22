@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Crop Surveillance Application</string>
+    <string name="automaticIrrigation"> In automatic irrigation, the plant will  be irrigated as soon as soil moisture  measured falls beyond threshold value. </string>
+    <string name="scheduledIrrigation"> In scheduled irrigation, the plant will  be irrigated based on start and end time. Please use time format HH:MM </string>
+    <string name="sunControlYes"> In sunlight exposure control, the sun shade will be activated if the plant sunlight exposure exceeds set limit </string>
+    <string name="sunControlNo"> Without sunlight exposure control, the sun shade will be retracted and plant will be exposed to sunlight at all times.</string>
+    <string name="plantParamBanner"> Here you can edit the parameter limits for sensors.</string>
+    <array name="irrigationType">
+        <item>Select Irrigation Type</item>
+        <item>Automatic</item>
+        <item>Scheduled</item>
+    </array>
+    <array name="sunlightOption">
+        <item>Select a Sunlight control option</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <array name="parameters">
+        <item>Humidity</item>
+        <item>Intruder</item>
+        <item>Moisture</item>
+        <item>Temperature</item>
+    </array>
+    <array name="animalOptions">
+        <item>Select an option</item>
+        <item>Dog</item>
+        <item>Monkey</item>
+        <item>Pig</item>
+    </array>
+</resources>

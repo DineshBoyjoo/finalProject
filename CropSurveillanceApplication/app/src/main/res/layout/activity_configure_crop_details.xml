@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:context=".configure_crop_details">
+
+        <TextView
+            android:id="@+id/InfoBannerCrops"
+            android:layout_width="309dp"
+            android:layout_height="45dp"
+            android:text="In this page, you can change your  crops settings to get an optimal yield"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.397"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <EditText
+            android:id="@+id/edt_plantName"
+            android:layout_width="326dp"
+            android:layout_height="42dp"
+
+            android:ems="10"
+            android:hint="Enter plant name"
+            android:inputType="textShortMessage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InfoBannerCrops"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <EditText
+            android:id="@+id/edt_plantDescription"
+            android:layout_width="326dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter plant description (Optional)"
+            android:inputType="textLongMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_plantName" />
+
+        <Spinner
+            android:id="@+id/spinner_irrigationType"
+            android:layout_width="316dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="72dp"
+            android:entries="@array/irrigationType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_plantDescription" />
+
+        <Spinner
+            android:id="@+id/spinner_sunControl"
+            android:layout_width="316dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="76dp"
+            android:entries="@array/sunlightOption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_irr_end" />
+
+        <TextView
+            android:id="@+id/IrrigationConfigBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Irrigation configuration"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_plantDescription" />
+
+        <TextView
+            android:id="@+id/tv_IrrigateInfo"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_irrigationType" />
+
+        <EditText
+            android:id="@+id/edt_irr_start"
+            android:layout_width="327dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter start time for Irrigation (HH:MM)"
+            android:inputType="time"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_IrrigateInfo" />
+
+        <EditText
+            android:id="@+id/edt_irr_end"
+            android:layout_width="327dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter end time for Irrigation (HH:MM)"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_irr_start" />
+
+        <EditText
+            android:id="@+id/edt_sun_hrs"
+            android:layout_width="327dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter sunlight exposure time (hour)"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sunControlInfo" />
+
+        <Button
+            android:id="@+id/btn_submitCropDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_sun_hrs" />
+
+        <TextView
+            android:id="@+id/plantInfoStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Plant Information "
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InfoBannerCrops" />
+
+        <TextView
+            android:id="@+id/SunlightControlBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Sunlight control Configuration"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_irr_end" />
+
+        <TextView
+            android:id="@+id/tv_sunControlInfo"
+            android:layout_width="314dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:text="In sunlight exposure control, the sun shade will be activated if the plant sunlight exposure exceeds set limit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_sunControl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
